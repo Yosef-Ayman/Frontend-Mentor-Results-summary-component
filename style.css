@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'HankenGrotesk', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #ECF2FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 630px;
+    background-color: white;
+    display: flex;
+    border-radius: 1em;
+}
+
+.one {
+    width: 50%;
+    border-radius: 1em;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 2em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.circle {
+    margin: 2em;
+    padding: 2em;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2em 2em 1em;
+    justify-content: space-between;
+}
+
+.box {
+    margin: 1rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+img {
+    margin-right: 0.5rem;
+}
+
+.score {
+    margin-left: auto;
+}
+
+.button {
+    width: 100%;
+    margin: 1rem 0 2rem;
+}
+
+button {
+    width: 100%;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+}
+
+button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+
+.text1 { color: hsl(0, 100%, 67%) }
+#box1 { background-color: #FFF6F7 }
+
+.text2 { color: hsl(39, 100%, 56%) }
+#box2 { background-color: #FFFAF4 }
+
+.text3 { color: hsl(166, 100%, 37%) }
+#box3 { background-color: #F2FDF9 }
+
+.text4 { color: hsl(234, 85%, 45%) }
+#box4 { background-color: #F4F4FE }
+
+.over100 { color: #9D989E }
+p { color: #C0C0FF; margin: 1rem 0 }
+.top {color: #CCBDFF; font-size: 1.2em; font-weight: 500 }
+.great {font-size: 1.8rem; font-weight: 500 }
+.summary {font-size: 1.2em; font-weight: 500 }
+.attribution { font-size: 0.7rem }
+.user-score { font-size: 4.8rem; font-weight: bold }
+
+@media screen and (max-width: 568px) {
+    body {
+        background-color: transparent;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    main {
+        flex-direction: column;
+    }
+    .one {
+        width: 100%;
+        border-radius: 0 0 1em 1em;
+    }
+    .two {
+        width: 100%;
+    }
+}
