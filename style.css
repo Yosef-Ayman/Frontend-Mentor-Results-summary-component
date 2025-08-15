@@ -130,7 +130,7 @@ p { color: #C0C0FF; margin: 1rem 0 }
 .top {color: #CCBDFF; font-size: 1.2em; font-weight: 500 }
 .great {font-size: 1.8rem; font-weight: 500 }
 .summary {font-size: 1.2em; font-weight: 500 }
-.attribution { font-size: 0.7rem }
+.attribution { font-size: 0.7rem; text-align: center }
 .user-score { font-size: 4.8rem; font-weight: bold }
 
 @media screen and (max-width: 568px) {
@@ -149,4 +149,5 @@ p { color: #C0C0FF; margin: 1rem 0 }
     .two {
         width: 100%;
     }
+
 }
